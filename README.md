@@ -1,2 +1,2 @@
 # CursoEmVideo
- Aulas HTML5/CSS3/JS
+ Aulas e exercícios
