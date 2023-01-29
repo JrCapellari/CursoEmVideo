@@ -1,22 +1,28 @@
-from lib.interface import *
+from libr.minhaUI import *
+from libr.arquivo import *
 from time import sleep
 
+
+arq = 'dados.txt'
+if not arqexiste(arq):
+    criararquivo(arq)
+
 while True:
-    resp = menu(['listar cadastro', 'cadastrar pessoa', 'sair'])
-    if resp == 1 or resp == 2:
-        print(f'Opção {resp} escolhida')
+    resp = menu(['listar cadastro', 'cadastrar pessoas', 'sair'])
+    if resp == 1:
+        # lista o cadastro
+        cabeca('LISTA DE PESSOAS')
+        lerarquivo(arq)
+    elif resp == 2:
+        # cadastra nova pessoa
+        cabeca('NOVO CADASTRO')
+        nome = str(input('Digite o nome: '))
+        idade = leiaint('Digite a idade: ')
+        cadastrar(arq, nome, idade)
     elif resp == 3:
         print(f'Fechando aplicação....')
-        sleep(1.3)
+        sleep(1)
         print('encerrado'.upper())
         break
     else:
         print('\33[31m:::ERRO::: opção inválida\33[m')
-
-
-
-
-
-
-
-
