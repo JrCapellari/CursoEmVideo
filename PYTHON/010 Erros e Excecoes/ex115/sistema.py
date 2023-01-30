@@ -3,7 +3,7 @@ from libr.arquivo import *
 from time import sleep
 
 
-arq = 'dados.txt'
+arq = 'E:Cursos/CursoEmVideo/PYTHON/010 erros e excecoes/ex115/dados.txt'
 if not arqexiste(arq):
     criararquivo(arq)
 

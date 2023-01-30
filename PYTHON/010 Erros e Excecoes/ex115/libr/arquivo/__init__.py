@@ -15,7 +15,7 @@ def criararquivo(nome):
     except:
         print('\33[31m:::ERRO::: Arquivo NÃO criado\33[m')
     else:
-        print(f'Arquivo {nome} criado com sucesso')
+        print(f'Arquivo criado com sucesso')
 
 
 def lerarquivo(nome):
