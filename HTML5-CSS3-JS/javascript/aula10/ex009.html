@@ -15,10 +15,18 @@
         }
         input{
             font: normal 12pt arial;
-            width: 80px ;
+            width: 50px ;
+        }
+        input#btsoma{
+            background-color: brown;
+            border: none;
+            width: 80px;
+            font: normal 17px arial;
+            color: azure;
         }
         div#res{
             margin-top: 20px ;
+
         }
 
     </style>
@@ -27,8 +35,8 @@
     <h1>Somando Valores</h1>
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" nome="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-    <div id="res">resultado</div>
+    <input type="button" value="Somar" id="btsoma" onclick="somar()">
+    <div id="res"></div>
     <script>
         function somar(){
             var tn1 = window.document.getElementById('txtn1')
